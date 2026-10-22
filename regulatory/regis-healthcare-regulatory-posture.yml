@@ -1,0 +1,75 @@
+generated: '2026-10-22'
+method: searched
+source:
+- https://www.regis.com.au/privacy-policy/
+- https://www.regis.com.au/terms-and-conditions/
+probe: true
+note: >-
+  Regis Healthcare (Australian aged care provider) publishes a Privacy Policy under the Privacy Act
+  and the Aged Care Act 2024. The Terms and Conditions page (HTTP 200) carries no regulatory
+  signals beyond linking the Privacy Policy. No trust centre, accessibility statement, subprocessor
+  list, SBOM or transparency report was found on the pages read. Signals not listed were not addressed.
+signals:
+  data_subject_request:
+    url: https://www.regis.com.au/privacy-policy/
+    section: How to access, correct or delete your personal information (Your Rights)
+    note: >-
+      Sets out access and correction rights. Requests are acknowledged within 7 days, and simple access
+      requests are usually handled within 30 days. Access may carry a nominal fee. Correction is free.
+    evidence:
+    - source: https://www.regis.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "You may also lodge a request to correct Personal Information We hold about You if You believe it is inaccurate, incomplete, irrelevant, misleading or out of date. There is no fee for doing this."
+    - source: https://www.regis.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "We will acknowledge Your request within 7 days, and for simple requests can usually provide access to Your information within 30 days."
+  data_retention:
+    url: https://www.regis.com.au/privacy-policy/
+    section: HOW WE PROTECT YOUR PERSONAL INFORMATION
+    note: >-
+      Data is deleted or de-identified once no longer needed, with retention allowed for legal and other
+      purposes. The only specific period named is seven years for vaccination status under the Aged Care Rules.
+    evidence:
+    - source: https://www.regis.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "For example, under the Aged Care Rules, we are required to retain information regarding the vaccination status of individuals receiving residential care for a period of seven years."
+    - source: https://www.regis.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "When We no longer need Personal Information, We take active steps to destroy or de-identify it."
+  incident_notification:
+    url: https://www.regis.com.au/privacy-policy/
+    section: Privacy Breaches
+    note: >-
+      Names a Data Breach Response Plan and commits to Privacy Act notifications to the OAIC and to the
+      people affected. No notification timeframe is stated.
+    evidence:
+    - source: https://www.regis.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "Regis will also adhere to its obligations under the Privacy Act in relation to any required notifications to the Office of the Australian Information Commissioner (OAIC) and to those people whose personal information has been lost, stolen or subject to authorised access or disclosure."
+  ai_transparency:
+    url: https://www.regis.com.au/privacy-policy/
+    section: HOW WE USE PERSONAL INFORMATION
+    note: >-
+      A qualified commitment on AI in automated decision making ("in ways which would infringe Your rights").
+      It does not disclose which AI systems are used or how.
+    evidence:
+    - source: https://www.regis.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "We will never trade or sell Your personal information to a third party or use artificial intelligence in automated decision making in ways which would infringe Your rights."
+  data_residency:
+    url: https://www.regis.com.au/privacy-policy/
+    section: HOW WE PROTECT YOUR PERSONAL INFORMATION — Service providers and overseas transfers
+    note: >-
+      Says that overseas transfers and storage by service providers happen. It names no countries or
+      storage regions, so no residency commitment is made.
+    evidence:
+    - source: https://www.regis.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "When We send information overseas or use service providers that handle or store data, We require them to take steps to keep Your information safe and use it appropriately."

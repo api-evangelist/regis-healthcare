@@ -1,0 +1,16 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/regis-healthcare/integrations
+- https://n8n.io/integrations/regis-healthcare/
+- https://composio.dev/toolkits/regis-healthcare
+- https://monid.ai/tools/regis-healthcare
+checked:
+- https://composio.dev/toolkits/regis-healthcare
+- https://monid.ai/tools/regis-healthcare
+- https://n8n.io/integrations/regis-healthcare/
+- https://zapier.com/apps/regis-healthcare/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

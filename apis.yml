@@ -1,23 +1,86 @@
 aid: regis-healthcare
+
 name: Regis Healthcare
-description: 'Regis Healthcare is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Regis Healthcare Limited (ASX: REG), trading as Regis Aged Care, is one of the largest aged care operators in Australia. Founded over 30 years ago and headquartered in Camberwell, Victoria, Regis provides services to more than 10,000 older Australians through residential aged care homes, home care service hubs, day therapy and respite centres, and retirement villages, with a team of over 13,000 employees. No public developer portal, API documentation or API reference was found on its website (regis.com.au); this profile records its corporate identity.'
+
 url: https://raw.githubusercontent.com/api-evangelist/regis-healthcare/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Healthcare
+- Aged Care
+- Home Care
+- Retirement Living
+- Australia
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.regis.com.au/site/wp-content/themes/regis_2018/assets/img/regis-logo.png
+
 common:
+- type: Hosts
+  url: hosts/regis-healthcare-hosts.yml
+- type: GettingStarted
+  url: https://www.regis.com.au/home-care/getting-started/
 - type: Website
-  url: https://regis.com.au/
+  url: https://www.regis.com.au/
+- type: DomainSecurity
+  url: security/regis-healthcare-domain-security.yml
+- type: AboutUs
+  url: https://www.regis.com.au/about-regis/
+- type: Support
+  url: https://www.regis.com.au/contact-us/
+- type: Newsroom
+  url: https://www.regis.com.au/newsroom/
+- type: Leadership
+  url: https://www.regis.com.au/leadership/
+- type: Investors
+  url: https://www.regis.com.au/investor-information/
+- type: Careers
+  url: https://www.regis.com.au/careers/
+- type: LinkedIn
+  url: https://au.linkedin.com/company/regis-agedcare
+- type: TermsOfService
+  url: https://www.regis.com.au/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.regis.com.au/privacy-policy/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: 'Regis Healthcare is an Australian aged care operator; regis.com.au (WordPress site) serves no developer portal or contract, with /openapi.json, /swagger.json, /api-docs and /developers/ all returning 404, and pre-flight contract discovery found no OpenAPI, AsyncAPI, GraphQL or MCP surface on its hosts.'
+  evidence:
+  - url: https://www.regis.com.au/
+    status: 200
+  - url: https://www.regis.com.au/openapi.json
+    status: 404
+  - url: https://www.regis.com.au/developers/
+    status: 404
+  checked: '2026-10-22'
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

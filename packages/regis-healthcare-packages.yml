@@ -1,0 +1,12 @@
+generated: '2026-10-22'
+method: none
+name: Regis Healthcare packages
+note: Regis Healthcare is an Australian aged care operator with no developer portal or API. No first-party SDK or client library found; registry.npmjs.org/regis-healthcare returned 404, pypi.org/pypi/regis-healthcare/json returned 404, and api.github.com/orgs/regis-healthcare returned 404 (2026-10-22).
+checked:
+- url: https://registry.npmjs.org/regis-healthcare
+  status: 404
+- url: https://pypi.org/pypi/regis-healthcare/json
+  status: 404
+- url: https://api.github.com/orgs/regis-healthcare
+  status: 404
+packages: []
